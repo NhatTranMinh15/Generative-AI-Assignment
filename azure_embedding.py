@@ -2,7 +2,7 @@ import os
 
 import chromadb
 from chromadb.config import Settings
-from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
+from chromadb.utils.embedding_functions.openai_embedding_function import OpenAIEmbeddingFunction
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import PyPDFLoader
@@ -18,6 +18,7 @@ chunked_documents = text_splitter.split_documents(document)
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(DIR, "chroma_data")
+
 chroma_client = chromadb.PersistentClient(
     path=DB_PATH, settings=Settings(allow_reset=True, anonymized_telemetry=False)
 )

@@ -17,7 +17,6 @@ DB_PATH = os.path.join(DIR, "chroma_data")
 chroma_client = chromadb.PersistentClient(
     path=DB_PATH, settings=Settings(allow_reset=True, anonymized_telemetry=False)
 )
-collection = chroma_client.get_or_create_collection(name=os.getenv("CHROMA_COLLECTION_NAME"))
 
 embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
