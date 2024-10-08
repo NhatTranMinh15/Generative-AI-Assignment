@@ -1,8 +1,5 @@
 import os
 
-import langchain
-import numpy as np
-import openai
 from dotenv import load_dotenv
 from langchain import hub
 from langchain.agents import AgentExecutor, Tool, create_react_agent
