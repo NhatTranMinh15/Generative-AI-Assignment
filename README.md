@@ -21,14 +21,14 @@ This project requires the installation of certain Python packages. You can insta
     ```bash
     conda create langchain python=3.11
     ```
-  Set the "langchain" env that has been just created as the running env in VS code
+      Set the "langchain" env that has been just created as the running env in VS code
 
 3. Install the required packages:
     ```bash
     pip install -r requirements.txt
     ```
 4. Create .env file
-   ```bash
-  AZURE_OPENAI_ENDPOINT=https://bonbonv2-dev-eastus2.openai.azure.com
-  AZURE_OPENAI_API_KEY=
-  ```
+    ```bash
+    AZURE_OPENAI_ENDPOINT=https://bonbonv2-dev-eastus2.openai.azure.com
+    AZURE_OPENAI_API_KEY=
+    ```
