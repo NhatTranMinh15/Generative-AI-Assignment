@@ -25,7 +25,7 @@ This project requires the installation of certain Python packages. You can insta
 
 3. Install the required packages:
     ```bash
-    pip install -r requirements.txt
+    pip install -r freeze.txt
     ```
 4. Create .env file
     ```bash
